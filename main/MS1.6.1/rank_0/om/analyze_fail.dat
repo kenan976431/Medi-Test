@@ -1,0 +1,36 @@
+# [No.1] construct_wrapper.221
+# In file /home/lxh/anaconda3/envs/lib_low/lib/python3.7/site-packages/mindspore/nn/layer/activation.py(437)/    def construct(self, x):/
+funcgraph fg_221(
+        %para1 : Tensor(F64)[]    # x
+    ) {
+
+#------------------------> 0
+    %1 = FuncGraph::fg_222(%para1)    #(Tensor(F64)[])    # fg_222=construct.222 #scope: Default
+#[CNode]223
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /home/lxh/anaconda3/envs/lib_low/lib/python3.7/site-packages/mindspore/nn/layer/activation.py(438)/        return self.tanh(x)/#[CNode]224
+}
+# order:
+#   1: construct_wrapper.221:[CNode]223{[0]: ValueNode<FuncGraph> construct.222, [1]: x}
+#   2: construct_wrapper.221:[CNode]224{[0]: ValueNode<Primitive> Return, [1]: [CNode]223}
+
+
+# [No.2] construct.222
+# In file /home/lxh/anaconda3/envs/lib_low/lib/python3.7/site-packages/mindspore/nn/layer/activation.py(437)/    def construct(self, x):/
+funcgraph fg_222(
+        %para2 : Tensor(F64)[]    # x
+    ) {
+
+#------------------------> 1
+    %1 = DoSignaturePrimitive::S-Prim-Tanh{prim_type=1}[output_names=["output"], input_names=["input_x"]](%para2)    #(Tensor(F64)[]) #scope: Default
+      # In file /home/lxh/anaconda3/envs/lib_low/lib/python3.7/site-packages/mindspore/nn/layer/activation.py(438)/        return self.tanh(x)/#[CNode]225
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /home/lxh/anaconda3/envs/lib_low/lib/python3.7/site-packages/mindspore/nn/layer/activation.py(438)/        return self.tanh(x)/#[CNode]226
+}
+# order:
+#   1: construct.222:[CNode]225{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Tanh, [1]: x}
+#   2: construct.222:[CNode]226{[0]: ValueNode<Primitive> Return, [1]: [CNode]225}
+
+
+#===============================================================================
+# num of function graphs in stack: 2/3 (Ignored 1 internal frames).

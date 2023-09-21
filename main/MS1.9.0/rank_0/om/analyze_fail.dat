@@ -1,0 +1,41 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.dat to get more instructions.
+# ===============================================================================
+
+# [No.1] Default_wrapper.215
+# In file /home/lxh/anaconda3/envs/lib_high/lib/python3.7/site-packages/mindspore/nn/layer/activation.py:654/    def construct(self, x):/
+funcgraph fg_215(
+        %para1 : F32NoShape    # x
+    ) {
+
+#------------------------> 0
+    %1 = FuncGraph::fg_216(%para1)    #(F32NoShape)    # fg_216=Default.216 #scope: Default
+#[CNode]217
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /home/lxh/anaconda3/envs/lib_high/lib/python3.7/site-packages/mindspore/nn/layer/activation.py:655/        return self.tanh(x)/#[CNode]218
+}
+# order:
+#   1: @Default_wrapper.215:[CNode]217{[0]: ValueNode<FuncGraph> Default.216, [1]: x}
+#   2: @Default_wrapper.215:[CNode]218{[0]: ValueNode<Primitive> Return, [1]: [CNode]217}
+
+
+# [No.2] Default.216
+# In file /home/lxh/anaconda3/envs/lib_high/lib/python3.7/site-packages/mindspore/nn/layer/activation.py:654/    def construct(self, x):/
+funcgraph fg_216(
+        %para2 : F32NoShape    # x
+    ) {
+
+#------------------------> 1
+    %1 = DoSignaturePrimitive::S-Prim-Tanh{prim_type=1}[output_names=["y"], input_names=["x"]](%para2)    #(F32NoShape) #scope: Default
+      # In file /home/lxh/anaconda3/envs/lib_high/lib/python3.7/site-packages/mindspore/nn/layer/activation.py:655/        return self.tanh(x)/#[CNode]219
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /home/lxh/anaconda3/envs/lib_high/lib/python3.7/site-packages/mindspore/nn/layer/activation.py:655/        return self.tanh(x)/#[CNode]220
+}
+# order:
+#   1: @Default.216:[CNode]219{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Tanh, [1]: x}
+#   2: @Default.216:[CNode]220{[0]: ValueNode<Primitive> Return, [1]: [CNode]219}
+
+
+#===============================================================================
+# num of function graphs in stack: 2/3 (Ignored 1 internal frames).
