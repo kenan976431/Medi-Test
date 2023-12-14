@@ -6,8 +6,8 @@
 
 [FreeFuzz](https://github.com/ise-uiuc/FreeFuzz/tree/main/data)
 
-## Meta
-### The list of bugs
+##  Meta's bug list and its new bugs fixed/confirmed situation
+### Meta's bug list
 ‘*’ Presents error type detected by Meta only.
 <table class="tg">
 <thead>
@@ -176,53 +176,63 @@
 </tbody>
 </table>
 
-### new bugs detected by Meta  fixed/confirmed situation
-<table class="tg">
+### Meta's new bugs fixed/confirmed situation
+'Y' stands for 'YES', 'N' stands for 'NO', '\' stands for have been fixed.
+<table class="tg" style="undefined;table-layout: fixed; width: 1097px">
+<colgroup>
+<col style="width: 171px">
+<col style="width: 77px">
+<col style="width: 91px">
+<col style="width: 520px">
+<col style="width: 49px">
+<col style="width: 189px">
+</colgroup>
 <thead>
   <tr>
     <th class="tg-9wq8">DL&nbsp;&nbsp;&nbsp;libray</th>
     <th class="tg-9wq8">operator</th>
     <th class="tg-9wq8">Error Type</th>
     <th class="tg-9wq8">triggering condition</th>
-    <th class="tg-9wq8">fixed？</th>
-    <th class="tg-9wq8">confrm</th>
+    <th class="tg-9wq8">fixed</th>
+    <th class="tg-9wq8">confrmed</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-9wq8" rowspan="2">Tensorflow2.15.0</td>
-    <td class="tg-9wq8" rowspan="3">BN</td>
+    <td class="tg-9wq8">BN</td>
     <td class="tg-9wq8">IE-IVE</td>
     <td class="tg-9wq8">set epsilon&lt;0.</td>
-    <td class="tg-9wq8">YES</td>
+    <td class="tg-9wq8">Y</td>
     <td class="tg-9wq8">\</td>
   </tr>
   <tr>
+    <td class="tg-9wq8">BN</td>
     <td class="tg-9wq8">PE</td>
     <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">YES</td>
+    <td class="tg-9wq8">Y</td>
     <td class="tg-9wq8">\</td>
   </tr>
   <tr>
     <td class="tg-9wq8">Pytorch2.1.1</td>
+    <td class="tg-9wq8">Conv</td>
     <td class="tg-9wq8">PE</td>
     <td class="tg-9wq8">Indicating precision error.</td>
-    <td class="tg-9wq8">NO</td>
-    <td class="tg-9wq8">NO</td>
+    <td class="tg-9wq8">N</td>
+    <td class="tg-9wq8">N</td>
   </tr>
   <tr>
     <td class="tg-9wq8" rowspan="2">mindspore-gpu1.10.0</td>
-    <td class="tg-9wq8">maxpool</td>
+    <td class="tg-9wq8" rowspan="2">maxpool</td>
     <td class="tg-9wq8">IE-UME</td>
     <td class="tg-9wq8">Triggering condition is set&nbsp;&nbsp;&nbsp;device to CPU, set dataformat to NHWC.</td>
-    <td class="tg-9wq8">YES</td>
+    <td class="tg-9wq8">Y</td>
     <td class="tg-9wq8">\</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"></td>
     <td class="tg-9wq8">PE</td>
     <td class="tg-9wq8">Indicating precision error.</td>
-    <td class="tg-9wq8">YES</td>
+    <td class="tg-9wq8">Y</td>
     <td class="tg-9wq8">\</td>
   </tr>
   <tr>
@@ -230,36 +240,37 @@
     <td class="tg-9wq8">BN</td>
     <td class="tg-9wq8">IE-UME</td>
     <td class="tg-9wq8">Triggering condition is set epsilon and momentum.</td>
-    <td class="tg-9wq8">YES</td>
+    <td class="tg-9wq8">Y</td>
     <td class="tg-9wq8">\</td>
   </tr>
   <tr>
     <td class="tg-9wq8">Conv</td>
     <td class="tg-9wq8">PE</td>
     <td class="tg-9wq8">Indicating precision error.</td>
-    <td class="tg-9wq8">NO</td>
-    <td class="tg-9wq8">NO</td>
+    <td class="tg-9wq8">N</td>
+    <td class="tg-9wq8">N</td>
   </tr>
   <tr>
     <td class="tg-9wq8">Tanh</td>
     <td class="tg-9wq8">PE</td>
     <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">NO</td>
-    <td class="tg-9wq8">NO</td>
+    <td class="tg-9wq8">N</td>
+    <td class="tg-9wq8">N</td>
   </tr>
   <tr>
     <td class="tg-9wq8">Tanh</td>
     <td class="tg-9wq8">PE</td>
     <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">NO</td>
-    <td class="tg-9wq8">NO</td>
+    <td class="tg-9wq8">N</td>
+    <td class="tg-ouci"><a href="https://github.com/alibaba/MNN/issues/2241">https://github.com/alibaba/MNN/issues/2241</a></td>
   </tr>
   <tr>
     <td class="tg-9wq8">Dconv</td>
     <td class="tg-9wq8">PE</td>
     <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">YES</td>
+    <td class="tg-9wq8">Y</td>
     <td class="tg-9wq8">\</td>
   </tr>
 </tbody>
+</table>
 </table>
