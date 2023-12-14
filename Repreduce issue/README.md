@@ -1,9 +1,11 @@
 # Bug recording 
 ## fuzz testing bug list
 [EGALE](https://github.com/lin-tan/eagle/tree/main/bug-reproduction)
+[DocTer](https://docs.google.com/spreadsheets/d/1DgupQBMVpybHtyOhCO0fRb-oJDZbZSbo7H-AG36AE_c/edit?pli=1#gid=1383411354)
+[FreeFuzz](https://github.com/ise-uiuc/FreeFuzz/tree/main/data)
 ## Meta
 ### The list of bugs
-*presents Error Type detected by Meta only
+* presents error type detected by Meta only
 <table class="tg">
 <thead>
   <tr>
