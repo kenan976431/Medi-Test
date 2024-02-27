@@ -307,7 +307,7 @@
     <td class="tg-9wq8" rowspan="2">MNN2.3.0</td>
     <td class="tg-9wq8">Convlution</td>
     <td class="tg-g0ou">N</td>
-    <td class="tg-i2ln"><a href="https://github.com/tensorflow/tensorflow/issues/59309">https://github.com/tensorflow/tensorflow/issues/59309</a></td>
+    <td class="tg-i2ln"><a href="https://github.com/alibaba/MNN/issues/1060">https://github.com/alibaba/MNN/issues/1060</a></td>
   </tr>
   <tr>
     <td class="tg-9wq8">Tanh</td>
