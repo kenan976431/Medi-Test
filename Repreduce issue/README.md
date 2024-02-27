@@ -6,13 +6,13 @@
 
 [FreeFuzz](https://github.com/ise-uiuc/FreeFuzz/tree/main/data)
 
-##  Meta's bug list and its new bugs fixed/confirmed situation
+##  Meta's bug list and its bugs fixed/confirmed situation
 ### Meta's bug list
-‘*’ Presents error type detected by Meta only.
+‘*’ presents error type detected by Meta only.
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax"> Library   </th>
+    <th class="tg-0lax"> DL&nbsp;libray   </th>
     <th class="tg-0lax">Operator   </th>
     <th class="tg-0lax">Error Type   </th>
     <th class="tg-0lax"> Deivce   </th>
@@ -177,100 +177,142 @@
 </table>
 
 ### Meta's new bugs fixed/confirmed situation
-'Y' stands for 'YES', 'N' stands for 'NO', '\' stands for have been fixed.
-<table class="tg" style="undefined;table-layout: fixed; width: 1097px">
+'Y' stands for 'YES', 'N' stands for 'NO', '-' stands for have been fixed.
+<table class="tg" style="undefined;table-layout: fixed; width: 1290px">
 <colgroup>
-<col style="width: 171px">
-<col style="width: 77px">
-<col style="width: 91px">
-<col style="width: 520px">
-<col style="width: 49px">
-<col style="width: 189px">
+<col style="width: 192px">
+<col style="width: 125px">
+<col style="width: 72px">
+<col style="width: 502px">
+<col style="width: 57px">
+<col style="width: 342px">
 </colgroup>
 <thead>
   <tr>
-    <th class="tg-9wq8">DL&nbsp;&nbsp;&nbsp;libray</th>
-    <th class="tg-9wq8">operator</th>
+    <th class="tg-9wq8">DL&nbsp;libray</th>
+    <th class="tg-9wq8">Operator</th>
     <th class="tg-9wq8">Error Type</th>
-    <th class="tg-9wq8">triggering condition</th>
-    <th class="tg-9wq8">fixed</th>
-    <th class="tg-9wq8">confrmed</th>
+    <th class="tg-9wq8">Triggering condition</th>
+    <th class="tg-nrix">Fixed</th>
+    <th class="tg-nrix">Confirmed</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-9wq8" rowspan="2">Tensorflow2.15.0</td>
-    <td class="tg-9wq8">BN</td>
-    <td class="tg-9wq8">IE-IVE</td>
-    <td class="tg-9wq8">set epsilon&lt;0.</td>
-    <td class="tg-9wq8">Y</td>
-    <td class="tg-9wq8">\</td>
+    <td class="tg-9wq8">BatchNormalize</td>
+    <td class="tg-g0ou">IE-IVE</td>
+    <td class="tg-g0ou">Set epsilon&lt;0.</td>
+    <td class="tg-nrix">Y</td>
+    <td class="tg-nrix">-</td>
   </tr>
   <tr>
-    <td class="tg-9wq8">BN</td>
-    <td class="tg-9wq8">PE</td>
-    <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">Y</td>
-    <td class="tg-9wq8">\</td>
+    <td class="tg-9wq8">BatchNormalize</td>
+    <td class="tg-g0ou">PE</td>
+    <td class="tg-g0ou">Indicating precision error</td>
+    <td class="tg-nrix">Y</td>
+    <td class="tg-nrix">-</td>
   </tr>
   <tr>
     <td class="tg-9wq8">Pytorch2.1.1</td>
-    <td class="tg-9wq8">Conv</td>
-    <td class="tg-9wq8">PE</td>
-    <td class="tg-9wq8">Indicating precision error.</td>
-    <td class="tg-9wq8">N</td>
-    <td class="tg-9wq8">N</td>
+    <td class="tg-9wq8">Convlution</td>
+    <td class="tg-g0ou">PE</td>
+    <td class="tg-g0ou">Indicating precision error.</td>
+    <td class="tg-nrix">N</td>
+    <td class="tg-nrix">N</td>
   </tr>
   <tr>
-    <td class="tg-9wq8" rowspan="2">mindspore-gpu1.10.0</td>
-    <td class="tg-9wq8" rowspan="2">maxpool</td>
+    <td class="tg-9wq8" rowspan="2">Mindspore-gpu1.10.0</td>
+    <td class="tg-9wq8" rowspan="2">MaxPool</td>
     <td class="tg-9wq8">IE-UME</td>
     <td class="tg-9wq8">Triggering condition is set&nbsp;&nbsp;&nbsp;device to CPU, set dataformat to NHWC.</td>
-    <td class="tg-9wq8">Y</td>
-    <td class="tg-9wq8">\</td>
+    <td class="tg-nrix">Y</td>
+    <td class="tg-nrix">-</td>
   </tr>
   <tr>
-    <td class="tg-9wq8">PE</td>
-    <td class="tg-9wq8">Indicating precision error.</td>
-    <td class="tg-9wq8">Y</td>
-    <td class="tg-9wq8">\</td>
+    <td class="tg-nrix">PE</td>
+    <td class="tg-nrix">Indicating precision error.</td>
+    <td class="tg-nrix">Y</td>
+    <td class="tg-nrix">-</td>
   </tr>
   <tr>
-    <td class="tg-9wq8" rowspan="5">MNN2.8.0</td>
-    <td class="tg-9wq8">BN</td>
-    <td class="tg-9wq8">IE-UME</td>
-    <td class="tg-9wq8">Triggering condition is set epsilon and momentum.</td>
-    <td class="tg-9wq8">Y</td>
-    <td class="tg-9wq8">\</td>
+    <td class="tg-nrix" rowspan="5">MNN2.8.0</td>
+    <td class="tg-nrix">BatchNormalize</td>
+    <td class="tg-nrix">IE-UME</td>
+    <td class="tg-nrix">Triggering condition is set epsilon and momentum.</td>
+    <td class="tg-nrix">Y</td>
+    <td class="tg-nrix">-</td>
   </tr>
   <tr>
-    <td class="tg-9wq8">Conv</td>
-    <td class="tg-9wq8">PE</td>
-    <td class="tg-9wq8">Indicating precision error.</td>
-    <td class="tg-9wq8">N</td>
-    <td class="tg-9wq8">N</td>
+    <td class="tg-nrix">Convlution</td>
+    <td class="tg-nrix">PE</td>
+    <td class="tg-nrix">Indicating precision error.</td>
+    <td class="tg-nrix">N</td>
+    <td class="tg-i2ln"><a href="https://github.com/alibaba/MNN/issues/2205">https://github.com/alibaba/MNN/issues/2205</a></td>
   </tr>
   <tr>
-    <td class="tg-9wq8">Tanh</td>
-    <td class="tg-9wq8">PE</td>
-    <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">N</td>
-    <td class="tg-9wq8">N</td>
+    <td class="tg-nrix">Tanh</td>
+    <td class="tg-nrix">PE</td>
+    <td class="tg-nrix">Indicating precision error</td>
+    <td class="tg-nrix">N</td>
+    <td class="tg-nrix">N</td>
   </tr>
   <tr>
-    <td class="tg-9wq8">Tanh</td>
-    <td class="tg-9wq8">PE</td>
-    <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">N</td>
-    <td class="tg-ouci"><a href="https://github.com/alibaba/MNN/issues/2241">https://github.com/alibaba/MNN/issues/2241</a></td>
+    <td class="tg-nrix">Tanh</td>
+    <td class="tg-nrix">PE</td>
+    <td class="tg-nrix">Indicating precision error</td>
+    <td class="tg-nrix">N</td>
+    <td class="tg-i2ln"><a href="https://github.com/alibaba/MNN/issues/2241">https://github.com/alibaba/MNN/issues/2241</a></td>
   </tr>
   <tr>
-    <td class="tg-9wq8">Dconv</td>
-    <td class="tg-9wq8">PE</td>
-    <td class="tg-9wq8">Indicating precision error</td>
-    <td class="tg-9wq8">Y</td>
-    <td class="tg-9wq8">\</td>
+    <td class="tg-nrix">DepthwiseConvlution</td>
+    <td class="tg-nrix">PE</td>
+    <td class="tg-nrix">Indicating precision error</td>
+    <td class="tg-nrix">Y</td>
+    <td class="tg-nrix">-</td>
   </tr>
 </tbody>
 </table>
+
+### Meta's confirmed old bugs fixed situation
+'Y' stands for 'YES', 'N' stands for 'NO'.
+<table class="tg" style="undefined;table-layout: fixed; width: 850px">
+<colgroup>
+<col style="width: 183px">
+<col style="width: 119px">
+<col style="width: 69px">
+<col style="width: 479px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-9wq8">DL&nbsp;library</th>
+    <th class="tg-9wq8">Operator</th>
+    <th class="tg-9wq8">Fixed</th>
+    <th class="tg-nrix">Comfirmed Link</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-9wq8" rowspan="2">Tensorflow1.13.1</td>
+    <td class="tg-9wq8">Batchnormalize</td>
+    <td class="tg-g0ou">Y</td>
+    <td class="tg-i2ln"><a href="https://github.com/tensorflow/tensorflow/issues/59309">https://github.com/tensorflow/tensorflow/issues/59309</a></td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">Batchnormalize</td>
+    <td class="tg-g0ou">Y</td>
+    <td class="tg-i2ln"><a href="https://github.com/tensorflow/tensorflow/issues/59307">https://github.com/tensorflow/tensorflow/issues/59307</a></td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8" rowspan="2">MNN2.3.0</td>
+    <td class="tg-9wq8">Convlution</td>
+    <td class="tg-g0ou">N</td>
+    <td class="tg-i2ln"><a href="https://github.com/tensorflow/tensorflow/issues/59309">https://github.com/tensorflow/tensorflow/issues/59309</a></td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">Tanh</td>
+    <td class="tg-9wq8">N</td>
+    <td class="tg-nrix">https://github.com/alibaba/MNN/issues/2241</td>
+  </tr>
+</tbody>
 </table>
