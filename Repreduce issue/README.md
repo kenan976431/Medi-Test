@@ -6,8 +6,8 @@
 
 [FreeFuzz](https://github.com/ise-uiuc/FreeFuzz/tree/main/data)
 
-##  Meta's bug list and its bugs fixed/confirmed situation
-### Meta's bug list
+##  Meta's error list and fixed/confirmed situation
+### Meta's error list
 ‘*’ presents error type detected by Meta only.
 <table class="tg">
 <thead>
@@ -176,107 +176,9 @@
 </tbody>
 </table>
 
-### Meta's new bugs fixed/confirmed situation
-'Y' stands for 'YES', 'N' stands for 'NO', '-' stands for have been fixed.
-<table class="tg" style="undefined;table-layout: fixed; width: 1290px">
-<colgroup>
-<col style="width: 192px">
-<col style="width: 125px">
-<col style="width: 72px">
-<col style="width: 502px">
-<col style="width: 57px">
-<col style="width: 342px">
-</colgroup>
-<thead>
-  <tr>
-    <th class="tg-9wq8">DL&nbsp;libray</th>
-    <th class="tg-9wq8">Operator</th>
-    <th class="tg-9wq8">Error Type</th>
-    <th class="tg-9wq8">Triggering condition</th>
-    <th class="tg-nrix">Fixed</th>
-    <th class="tg-nrix">Confirmed</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-9wq8" rowspan="2">Tensorflow2.15.0</td>
-    <td class="tg-9wq8">BatchNormalize</td>
-    <td class="tg-g0ou">IE-IVE</td>
-    <td class="tg-g0ou">Set epsilon&lt;0.</td>
-    <td class="tg-nrix">Y</td>
-    <td class="tg-nrix">-</td>
-  </tr>
-  <tr>
-    <td class="tg-9wq8">BatchNormalize</td>
-    <td class="tg-g0ou">PE</td>
-    <td class="tg-g0ou">Indicating precision error</td>
-    <td class="tg-nrix">Y</td>
-    <td class="tg-nrix">-</td>
-  </tr>
-  <tr>
-    <td class="tg-9wq8">Pytorch2.1.1</td>
-    <td class="tg-9wq8">Convlution</td>
-    <td class="tg-g0ou">PE</td>
-    <td class="tg-g0ou">Indicating precision error.</td>
-    <td class="tg-nrix">N</td>
-    <td class="tg-nrix">N</td>
-  </tr>
-  <tr>
-    <td class="tg-9wq8" rowspan="2">Mindspore-gpu1.10.0</td>
-    <td class="tg-9wq8" rowspan="2">MaxPool</td>
-    <td class="tg-9wq8">IE-UME</td>
-    <td class="tg-9wq8">Triggering condition is set&nbsp;&nbsp;&nbsp;device to CPU, set dataformat to NHWC.</td>
-    <td class="tg-nrix">Y</td>
-    <td class="tg-nrix">-</td>
-  </tr>
-  <tr>
-    <td class="tg-nrix">PE</td>
-    <td class="tg-nrix">Indicating precision error.</td>
-    <td class="tg-nrix">Y</td>
-    <td class="tg-nrix">-</td>
-  </tr>
-  <tr>
-    <td class="tg-nrix" rowspan="5">MNN2.8.0</td>
-    <td class="tg-nrix">BatchNormalize</td>
-    <td class="tg-nrix">IE-UME</td>
-    <td class="tg-nrix">Triggering condition is set epsilon and momentum.</td>
-    <td class="tg-nrix">Y</td>
-    <td class="tg-nrix">-</td>
-  </tr>
-  <tr>
-    <td class="tg-nrix">Convlution</td>
-    <td class="tg-nrix">PE</td>
-    <td class="tg-nrix">Indicating precision error.</td>
-    <td class="tg-nrix">N</td>
-    <td class="tg-i2ln"><a href="https://github.com/alibaba/MNN/issues/2205">https://github.com/alibaba/MNN/issues/2205</a></td>
-  </tr>
-  <tr>
-    <td class="tg-nrix">Tanh</td>
-    <td class="tg-nrix">PE</td>
-    <td class="tg-nrix">Indicating precision error</td>
-    <td class="tg-nrix">N</td>
-    <td class="tg-nrix">N</td>
-  </tr>
-  <tr>
-    <td class="tg-nrix">Tanh</td>
-    <td class="tg-nrix">PE</td>
-    <td class="tg-nrix">Indicating precision error</td>
-    <td class="tg-nrix">N</td>
-    <td class="tg-i2ln"><a href="https://github.com/alibaba/MNN/issues/2241">https://github.com/alibaba/MNN/issues/2241</a></td>
-  </tr>
-  <tr>
-    <td class="tg-nrix">DepthwiseConvlution</td>
-    <td class="tg-nrix">PE</td>
-    <td class="tg-nrix">Indicating precision error</td>
-    <td class="tg-nrix">Y</td>
-    <td class="tg-nrix">-</td>
-  </tr>
-</tbody>
-</table>
-
 ### Meta's new errors fixed/confirmed situation
 
-<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="792" style="width:594.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="1103" style="width:827.4pt;border-collapse:collapse;mso-yfti-tbllook:1184;
  mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.7pt">
   <td width="79" nowrap="" style="width:59.0pt;border-top:solid windowtext 1.0pt;
@@ -291,36 +193,35 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Operator<o:p></o:p></span></b></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;border-top:solid windowtext 1.0pt;
+  <td width="47" nowrap="" style="width:35.4pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Type<o:p></o:p></span></b></p>
   </td>
-  <td width="439" style="width:329.0pt;border-top:solid windowtext 1.0pt;
+  <td width="480" style="width:359.9pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Triggering Condition<o:p></o:p></span></b></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border-top:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">F/C?<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border-top:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Time<o:p></o:p></span></b></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border-top:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
-  <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span class="SpellE"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
-  color:black;mso-font-kerning:0pt">Url</span></b></span><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;color:black;
-  mso-font-kerning:0pt"><o:p></o:p></span></b></p>
+  <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
+  color:black;mso-font-kerning:0pt">Url<o:p></o:p></span></b></p>
   </td>
  </tr>
  <tr style="mso-yfti-irow:1;height:22.7pt">
@@ -335,27 +236,27 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">BN<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">IVE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Set
   epsilon&lt;0.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="19" nowrap="" style="width:14.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="88" nowrap="" style="width:65.7pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">11/15/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="316" nowrap="" style="width:237.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">/<o:p></o:p></span></p>
@@ -367,27 +268,27 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">BN<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="19" nowrap="" style="width:14.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="88" nowrap="" style="width:65.7pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">11/15/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="316" nowrap="" style="width:237.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">/<o:p></o:p></span></p>
@@ -400,32 +301,32 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Tanh<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="47" nowrap="" style="width:35.4pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="480" style="width:359.9pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">11/15/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
@@ -443,29 +344,29 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">BN<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">IVE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Triggering condition
   is to set epsilon&lt;0.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">11/15/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
@@ -487,14 +388,14 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Conv<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;border-top:solid windowtext 1.0pt;
+  <td width="47" nowrap="" style="width:35.4pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;border-top:solid windowtext 1.0pt;
+  <td width="480" style="width:359.9pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
@@ -502,21 +403,21 @@
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">01/31/2024<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
@@ -535,29 +436,29 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Conv<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="19" nowrap="" style="width:14.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">01/31/2024<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="316" nowrap="" style="width:237.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">/<o:p></o:p></span></p>
@@ -578,32 +479,31 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">MP<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="47" nowrap="" style="width:35.4pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">UME<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="480" style="width:359.9pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Triggering
-  condition is set&nbsp;device to CPU, set <span class="SpellE">dataformat</span>
-  to NHWC.<o:p></o:p></span></i></p>
+  condition is set&nbsp;device to CPU, set dataformat to NHWC.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="88" nowrap="" style="width:65.7pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">10/28/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
@@ -611,32 +511,32 @@
   </td>
  </tr>
  <tr style="mso-yfti-irow:8;height:22.7pt">
-  <td width="39" nowrap="" style="width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="47" nowrap="" style="width:35.4pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="480" style="width:359.9pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">10/28/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
@@ -656,55 +556,54 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Conv<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">UME<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Triggering
-  condition is set device to CPU, set <span class="SpellE">dataformat</span> to
-  NHWC.<o:p></o:p></span></i></p>
+  condition is set device to CPU, set dataformat to NHWC.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="19" nowrap="" style="width:14.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="88" nowrap="" style="width:65.7pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">01/26/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="316" nowrap="" style="width:237.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
-  color:black;mso-font-kerning:0pt">1<o:p></o:p></span></p>
+  color:black;mso-font-kerning:0pt">https://github.com/apache/mxnet/issues/21176<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style="mso-yfti-irow:10;height:22.7pt">
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="19" nowrap="" style="width:14.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">N<o:p></o:p></span></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="88" nowrap="" style="width:65.7pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">/<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="316" nowrap="" style="width:237.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">/<o:p></o:p></span></p>
@@ -721,32 +620,32 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">BN<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="47" nowrap="" style="width:35.4pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">UME<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="480" style="width:359.9pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Triggering
   condition is set epsilon and momentum.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">12/29/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border:none;border-top:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border:none;border-top:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
@@ -759,30 +658,30 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Conv<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="19" nowrap="" style="width:14.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="88" nowrap="" style="width:65.7pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">02/25/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="316" nowrap="" style="width:237.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
-  color:black;mso-font-kerning:0pt">2<o:p></o:p></span></p>
+  color:black;mso-font-kerning:0pt">https://github.com/alibaba/MNN/issues/2241<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style="mso-yfti-irow:13;height:22.7pt">
@@ -791,61 +690,60 @@
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Tanh<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="47" nowrap="" style="width:35.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+  <td width="480" style="width:359.9pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="19" nowrap="" style="width:14.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="88" nowrap="" style="width:65.7pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">08/14/2020<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width="316" nowrap="" style="width:237.2pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
-  color:black;mso-font-kerning:0pt">3<o:p></o:p></span></p>
+  color:black;mso-font-kerning:0pt">https://github.com/alibaba/MNN/issues/1060<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style="mso-yfti-irow:14;mso-yfti-lastrow:yes;height:22.7pt">
   <td width="75" nowrap="" style="width:56.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
-  <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span class="SpellE"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
-  color:black;mso-font-kerning:0pt">DWConv</span></span><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;color:black;
-  mso-font-kerning:0pt"><o:p></o:p></span></p>
+  <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
+  color:black;mso-font-kerning:0pt">DWConv<o:p></o:p></span></p>
   </td>
-  <td width="39" nowrap="" style="width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="47" nowrap="" style="width:35.4pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">PE<o:p></o:p></span></p>
   </td>
-  <td width="439" style="width:329.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="480" style="width:359.9pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><i><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
   mso-fareast-font-family:等线;color:black;mso-font-kerning:0pt">Indicating
   precision error.<o:p></o:p></span></i></p>
   </td>
-  <td width="51" nowrap="" style="width:38.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="19" nowrap="" style="width:14.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">Y<o:p></o:p></span></b></p>
   </td>
-  <td width="77" nowrap="" style="width:58.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="88" nowrap="" style="width:65.7pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">12/29/2023<o:p></o:p></span></p>
   </td>
-  <td width="33" nowrap="" style="width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  <td width="316" nowrap="" style="width:237.2pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
   <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-US" style="font-size:11.0pt;font-family:&quot;Arial Unicode MS&quot;,sans-serif;
   color:black;mso-font-kerning:0pt">/<o:p></o:p></span></p>
